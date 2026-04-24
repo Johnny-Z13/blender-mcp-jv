@@ -14,3 +14,39 @@ wheels/
 
 # Local config secrets
 src/blender_mcp/config.py
+
+# Claude Code / IDE local state
+.claude/
+
+# Blender working files (saved locally, not tracked)
+*.blend
+*.blend1
+*.blend2
+
+# 3D art assets and large binaries (keep repo lean)
+*.glb
+*.gltf
+*.fbx
+*.obj
+*.mtl
+*.ply
+*.stl
+*.abc
+*.usd
+*.usdc
+*.usda
+*.usdz
+
+# Textures and baked images
+*.psd
+*.exr
+*.hdr
+
+# OS noise
+Thumbs.db
+
+# Editor noise
+*.swp
+*.swo
+.idea/
+.vscode/

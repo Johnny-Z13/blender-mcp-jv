@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "blender": {
+      "type": "stdio",
+      "command": "/Users/johnnyvenables/.local/bin/uvx",
+      "args": [
+        "blender-mcp"
+      ],
+      "env": {}
+    }
+  }
+}

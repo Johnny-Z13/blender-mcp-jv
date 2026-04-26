@@ -2,6 +2,22 @@
 
 # BlenderMCP - Blender Model Context Protocol Integration
 
+> **JV remix note** — this fork is Johnny's working copy of [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp). It adds:
+> - `input/` and `output/` working folders (contents gitignored, see below)
+> - Project-scoped `.mcp.json` so the `blender` MCP server is registered for this repo
+> - Local working docs (`CLAUDE.md`, `LEARNING.md`)
+>
+> The upstream project remains the source of truth for `addon.py` / `src/`. Don't refactor those without a reason.
+
+## Working Folders (JV remix)
+
+- **`input/`** — drop raw assets here (reference images, FBX/OBJ from elsewhere, screenshots, source files to process).
+- **`output/`** — finished/exported deliverables land here (renders, baked textures, exported models).
+
+Both folders are kept in the repo via `.gitkeep`, but their contents are gitignored — manage them manually, don't commit large binaries.
+
+---
+
 BlenderMCP connects Blender to Claude AI through the Model Context Protocol (MCP), allowing Claude to directly interact with and control Blender. This integration enables prompt assisted 3D modeling, scene creation, and manipulation.
 
 **We have no official website. Any website you see online is unofficial and has no affiliation with this project. Use them at your own risk.**

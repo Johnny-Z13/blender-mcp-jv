@@ -42,6 +42,12 @@ src/blender_mcp/config.py
 *.exr
 *.hdr
 
+# JV working folders — keep the folders, ignore contents
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
 # OS noise
 Thumbs.db
 

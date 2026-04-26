@@ -17,6 +17,15 @@ The user is new to Blender and to MCP. The primary use case right now is **using
 - Technical-creative (see global CLAUDE.md) — wants to ship, not ceremony
 - Currently has a character model open in Blender (`assets/psycho-character.blend` is untracked in git — likely related)
 
+## JV Working Folders: `input/` and `output/`
+
+This fork adds a simple workflow pattern:
+
+- **`input/`** — JV drops raw assets here (reference images, source meshes, FBX/OBJ from elsewhere, screenshots, etc.) for us to process.
+- **`output/`** — finished/exported deliverables land here (renders, exported models, baked textures).
+
+Both folders are **tracked as folders** (via `.gitkeep`) but their **contents are gitignored**. JV manages those files manually for now — never commit anything in them, and don't push large binaries through git. If JV asks to "process the input folder" or similar, treat it as the source of truth for whatever raw material we're working with that session.
+
 ## How to Work Together in Blender
 
 When the `blender` MCP tools are connected, a typical flow:

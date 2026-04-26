@@ -22,6 +22,8 @@ A running record of what I'm learning about Blender, my preferences, and gotchas
 - **2026-04-24** — **Pose Mode** is where you rotate/move bones to animate. **Edit Mode** on an armature is where you add/move bones in their rest position.
 - **2026-04-24** — **Action** = a single animation clip (a set of keyframed curves). Only one action is "active" on an object at a time — to ship multiple clips in one file you **push them down to the NLA** (Non-Linear Animation editor) as strips.
 - **2026-04-24** — **GLB export with `export_animation_mode='NLA_TRACKS'`** makes each NLA track become its own named animation clip in the GLB. This is how you get multiple idle anims in one file.
+- **2026-04-25** — **Baking transforms into mesh data** vs. setting object transform. To rescale/reposition a mesh permanently so the local geometry matches a target spec (e.g. exact game dimensions), apply parent-clear with `CLEAR_KEEP_TRANSFORM`, then `transform_apply(location, rotation, scale)`. After that, mesh verts live in world coords and the object transform is identity — perfect for clean GLB export.
+- **2026-04-25** — **Detecting which end is which on a tapered mesh**: bucket vertices into X-slabs and compute mean radial distance from the slab centroid. Smaller mean radius = thinner end (e.g. cue tip).
 
 ---
 
